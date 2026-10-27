@@ -1,0 +1,16 @@
+dist/
+.local/
+.build/
+.validation/
+.backups/
+*.exe
+*.pdb
+*.zip
+*.log
+assets/*
+!assets/animation.ini
+.env
+.env.*
+settings.ini
+Thumbs.db
+Desktop.ini
