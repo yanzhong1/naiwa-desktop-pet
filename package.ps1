@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop'
 & (Join-Path $PSScriptRoot 'build.ps1')
 $product = Join-Path $PSScriptRoot 'dist\奶龙桌宠'
-$archive = Join-Path $PSScriptRoot 'dist\奶龙桌宠-便携版.zip'
+$archive = Join-Path $PSScriptRoot 'dist\NaiwaDesktopPet-Windows-Portable.zip'
 $executable = Join-Path $product '奶龙桌宠.exe'
 $assets = Join-Path $product 'assets'
 if (!(Test-Path -LiteralPath $executable) -or !(Test-Path -LiteralPath $assets)) {

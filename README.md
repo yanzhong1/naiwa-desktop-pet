@@ -2,7 +2,23 @@
 
 使用 C#、WinForms 和 Windows 逐像素透明窗口实现的桌宠程序。支持拖动、分身、动作播放和鼠标靠近反应，不需要 Electron、Node.js 或 Python 运行环境。
 
-本仓库公开程序源码、构建脚本和动画速度配置。角色图片、动画、音效和图标不随仓库发布，需要从你有权使用的本地素材包导入。详见 [素材来源与许可范围](THIRD_PARTY_ASSETS.md)。
+## 直接下载（Windows 用户）
+
+### [点击下载完整便携版 ZIP](https://github.com/yanzhong1/naiwa-desktop-pet/releases/latest/download/NaiwaDesktopPet-Windows-Portable.zip)
+
+**下载后解压即可使用，无需编译，也不用安装 Python、Node.js 或 .NET SDK。**
+
+1. 点击上面的下载链接，保存 `NaiwaDesktopPet-Windows-Portable.zip`。
+2. 右键压缩包，选择“全部解压”。
+3. 打开解压得到的“奶龙桌宠”文件夹，双击“奶龙桌宠.exe”。
+
+程序默认静音，想听音效时右键角色，打开“声音”开关。右键“全部退出”可以关闭所有角色。
+
+完整便携包已包含动画和音效，约 33.4 MiB。移动程序时，请把整个文件夹一起移动，保留 EXE 旁边的 `assets`。不要直接在压缩包里双击运行。
+
+[查看最新版本和更新内容](https://github.com/yanzhong1/naiwa-desktop-pet/releases/latest)。GitHub 的“Code → Download ZIP”下载的是源码，普通使用请点上面的完整便携版。
+
+本仓库公开程序源码、构建脚本和动画速度配置。第三方角色图片、动画、音效和图标不提交到源码目录，完整运行素材由 Releases 便携包提供，其许可与程序代码分开，详见 [素材来源与许可范围](THIRD_PARTY_ASSETS.md)。
 
 ## 功能
 
@@ -41,7 +57,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -CompileOnly
 powershell -NoProfile -ExecutionPolicy Bypass -File .\package.ps1
 ```
 
-输出为 `dist/奶龙桌宠-便携版.zip`，只包含 `奶龙桌宠.exe` 与 `assets`。完整文件夹可以移动，EXE 需要与 `assets` 放在一起。打包不会自动上传任何文件。
+输出为 `dist/NaiwaDesktopPet-Windows-Portable.zip`，只包含 `奶龙桌宠.exe` 与 `assets`。完整文件夹可以移动，EXE 需要与 `assets` 放在一起。打包不会自动上传任何文件。
 
 ## 素材结构
 
@@ -86,4 +102,4 @@ package.ps1              构建便携包
 
 ## 许可证
 
-本仓库中的程序代码、脚本与配置使用 [MIT License](LICENSE)。角色形象、第三方动画和声音不包含在此授权内，也未包含在仓库中。这个项目是非官方桌宠实现，与角色权利人没有隶属或代言关系。
+本仓库中的程序代码、脚本与配置使用 [MIT License](LICENSE)。完整便携包附带的角色形象、第三方动画和声音不包含在此授权内，其权利归各自权利人。这个项目是非官方桌宠实现，与角色权利人没有隶属或代言关系。
